@@ -287,16 +287,6 @@ depends_on = [
 }
 
 
-/*
-output "amazon_linux_os_keypair_public" {
-	value = aws_key_pair.amazon_linux_key
-}
-
-output "amazon_linux_os_keypair_private" {
-	value = tls_private_key.amazon_linux_key_private
-}
-*/
-
 output "amazon_linux_os_ip_address" {
 	value = aws_instance.amazon_linux_os.public_ip
 }
